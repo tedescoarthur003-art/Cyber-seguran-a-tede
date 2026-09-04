@@ -216,7 +216,60 @@
 </section>
 
 </main>
+<!-- MODAL DE LOGIN -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <button class="close-btn" onclick="fecharModais()">×</button>
 
+    <h2>Entrar no CyberShield</h2>
+
+    <form onsubmit="login(event)">
+      <input type="email" id="loginEmail" placeholder="Seu e-mail" required>
+
+      <input type="password" id="loginSenha" placeholder="Sua senha" required>
+
+      <button type="submit" class="primary-btn">
+        Entrar
+      </button>
+    </form>
+
+    <p>
+      Ainda não possui uma conta?
+      <button type="button" onclick="abrirCadastro()">
+        Criar conta
+      </button>
+    </p>
+  </div>
+</div>
+
+
+<!-- MODAL DE CADASTRO -->
+<div id="cadastroModal" class="modal">
+  <div class="modal-content">
+    <button class="close-btn" onclick="fecharModais()">×</button>
+
+    <h2>Criar sua conta</h2>
+
+    <form onsubmit="cadastrar(event)">
+      <input type="text" id="cadastroNome" placeholder="Seu nome" required>
+
+      <input type="email" id="cadastroEmail" placeholder="Seu e-mail" required>
+
+      <input type="password" id="cadastroSenha" placeholder="Sua senha" minlength="6" required>
+
+      <button type="submit" class="primary-btn">
+        Criar conta
+      </button>
+    </form>
+
+    <p>
+      Já possui uma conta?
+      <button type="button" onclick="abrirLogin()">
+        Entrar
+      </button>
+    </p>
+  </div>
+</div>
 <script src="script.js"></script>
 
 </body>
