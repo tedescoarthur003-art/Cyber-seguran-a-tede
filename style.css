@@ -427,3 +427,76 @@ body {
 .panel-options .logout-btn:hover {
     background: rgba(255, 89, 100, 0.15);
 }
+/* ===== CORREÇÃO DO LAYOUT ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: #07111f;
+    color: white;
+}
+
+header,
+nav,
+main,
+section,
+footer {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.hero {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 24px;
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 768px) {
+    .container,
+    .hero-content {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        min-height: 400px;
+    }
+}
